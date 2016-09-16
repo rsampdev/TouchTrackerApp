@@ -30,6 +30,11 @@
     return [NSKeyedArchiver archiveRootObject:self.finishedLines toFile:self.linesArchiveURL.path];
 }
 
+- (IBAction)clearFinishedLines:(UIButton *)sender {
+    self.finishedLines = [[NSMutableArray alloc] init];
+    [self setNeedsDisplay];
+}
+
 - (void)strokeLine:(Line *)line {
     UIBezierPath *path = [[UIBezierPath alloc] init];
     path.lineWidth = 10;
