@@ -13,6 +13,8 @@
 		339977901D8B67940059EBD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3399778E1D8B67940059EBD6 /* Main.storyboard */; };
 		339977921D8B67940059EBD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339977911D8B67940059EBD6 /* Assets.xcassets */; };
 		339977951D8B67940059EBD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339977931D8B67940059EBD6 /* LaunchScreen.storyboard */; };
+		3399779E1D8B67AE0059EBD6 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399779D1D8B67AE0059EBD6 /* Line.m */; };
+		339977A11D8B694E0059EBD6 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 339977A01D8B694E0059EBD6 /* DrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		339977911D8B67940059EBD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		339977941D8B67940059EBD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		339977961D8B67940059EBD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3399779C1D8B67AE0059EBD6 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		3399779D1D8B67AE0059EBD6 /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		3399779F1D8B694E0059EBD6 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		339977A01D8B694E0059EBD6 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 		339977841D8B67940059EBD6 /* TouchTracker */ = {
 			isa = PBXGroup;
 			children = (
+				3399779F1D8B694E0059EBD6 /* DrawView.h */,
+				339977A01D8B694E0059EBD6 /* DrawView.m */,
+				3399779C1D8B67AE0059EBD6 /* Line.h */,
+				3399779D1D8B67AE0059EBD6 /* Line.m */,
 				339977881D8B67940059EBD6 /* AppDelegate.h */,
 				339977891D8B67940059EBD6 /* AppDelegate.m */,
 				3399778B1D8B67940059EBD6 /* ViewController.h */,
@@ -151,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3399778D1D8B67940059EBD6 /* ViewController.m in Sources */,
+				3399779E1D8B67AE0059EBD6 /* Line.m in Sources */,
 				3399778A1D8B67940059EBD6 /* AppDelegate.m in Sources */,
 				339977871D8B67940059EBD6 /* main.m in Sources */,
+				339977A11D8B694E0059EBD6 /* DrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TouchTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rsampdev.TouchTracker;
@@ -281,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TouchTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rsampdev.TouchTracker;
